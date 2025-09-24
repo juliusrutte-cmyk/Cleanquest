@@ -1,0 +1,125 @@
+ Basisfunktionen
+Aufgabenplanung: Individuelle Intervalle für Staubsaugen, Müll, Wäsche, Fenster putzen usw.
+Benachrichtigungen: Push-Mitteilungen, Widgets, Kalenderintegration.
+
+
+Mehrbenutzer-Support: Zuweisung von Aufgaben an Familienmitglieder/Mitbewohner.
+
+
+Checklisten-Modus: Abhaken von Aufgaben mit Fortschrittsanzeige.
+
+
+
+ Intelligente Erweiterungen
+
+Luftqualitätssensor → Erinnerung zum Lüft
+
+
+Müllsensor → erkennt, wenn Mülleimer voll ist.
+
+
+Standortbasierte Erinnerungen: Z. B. Müll rausbringen, wenn man am Abend das Haus verlässt.
+
+
+*KI-Lernfunktion: App passt Intervalle dynamisch an, wenn Aufgaben öfter oder seltener erledigt werden.
+
+
+
+Motivation & Gamification
+Punktesystem/Badges: Belohnung für erledigte Aufgaben.
+
+
+Team-Modus: Faire Verteilung unter Bewohnern, inkl. „Wer hat am meisten beigetragen“.
+
+
+Fortschrittsstatistik: Sauberkeits- und Ordnungstracker über Wochen/Monate.
+
+
+
+Praktische Alltagshilfen
+Einkaufslisten-Automatik: Putzmittel, Waschmittel oder Batterien automatisch auf die Liste setzen.
+
+
+Budgetplanung: Überblick über monatliche Haushaltskosten.
+
+
+Saisonale Aufgaben: Erinnerung an Heizungscheck, Gartenpflege, Fenster putzen im Frühling, Wintercheck fürs Auto.
+
+
+Inventarverwaltung: Überblick, welche Vorräte vorhanden sind (Lebensmittel, Waschmittel).
+
+
+
+Integration & Teilen
+Smart-Home-Anbindung: Alexa, Google Home, Apple HomeKit („Was steht heute an?“).
+
+
+Kalender-Sync: Google, iCloud, Outlook.
+
+
+Haushaltsgruppen: Teilen von Routinen oder Checklisten mit Freunden/Familie.
+
+
+Kinder-Modus: Kindgerechte Aufgaben („Spielzeug aufräumen“) mit spielerischen Avataren.
+
+
+
+Weitere Ideen
+Reinigungs-Tutorials: Kleine Anleitungen oder Tipps („So reinigst du den Wasserkocher entkalkt in 5 Min.“).
+
+
+Notfall-Checkliste: Für Stromausfall, Rohrbruch oder Gästeankündigung.
+
+
+Screentimeblocker bei zu wenig sterne4n
+
+ Intelligente Erweiterungen
+
+
+
+Name: CleanQuest         
+
+
+Rollen: 
+
+
+
+
+
+
+
+
+Arbeitsauftrag: 
+-Setzt euch in eurer Gruppe zusammen und formuliert eine klare Problemstellung, welches ihr mit eurem Projekt lösen wollt. 
+   ->Überlegt euch welche Probleme ihr angehen müsst, um eurer Projekt zu verwirklichen. 
+
+
+-Versucht eine Timeline für eure Projekt zu erstellen, vom 03.09.25 beginnend bis zum 31.12.25. Hierbei geht es nicht um genaue Ziele, sondern eine Grobe Planung (zb. monatlich), was ihr bis zu den Winterferien erreicht wollt. Ihr solltet bis dahin ein Projekt haben, welches ihr dann nicht mehr ändert. Aus diesem Grund, plant das Testen eurer Idee mit ein, sprecht mit Klassenkammeraden und Familie über die Idee und das Problem, was deren Meinung dazu ist. 
+Wichtig ist, dass ihr zu Weihnachten noch kein fertiges Produkt haben müsst, sondern lediglich ein Grundkonzept mit ersten Versuchen es zu realisieren. Achtet darauf nicht zu viel zu wollen, macht kleine Schritte! 
+                                                                                                                                  (hatte zu viel Zeit)
+
+
+Problemstellung:
+Im Alltag von Haushalten und Wohngemeinschaften entstehen regelmäßig wiederkehrende Aufgaben wie Staubsaugen, Müll rausbringen, Wäsche waschen oder Fenster putzen. Diese Aufgaben werden häufig unregelmäßig oder ungerecht verteilt erledigt. Das führt zu typischen Problemen:
+Unübersichtlichkeit: Niemand hat den vollständigen Überblick, welche Aufgaben wann anstehen oder bereits erledigt wurden.
+Ungleichverteilung: In Mehrpersonenhaushalten fühlen sich einzelne Personen überlastet, während andere weniger beitragen.
+Vergessene Aufgaben: Müllabfuhr, Wartungen oder der Einkauf von Putzmitteln werden oft zu spät bemerkt.
+Fehlende Motivation: Hausarbeit wird als lästig empfunden, es fehlen spielerische Anreizen und Erfolgsgefühl.
+Unverbundene Tools: Einkaufslisten, Kalender und Erinnerungen, was zu unübersichtlichkeit führt.
+Die Folge: Frust, Konflikte und ineffizienter Haushaltsalltag – obwohl viele Aufgaben mit Planung, Automatisierung und Motivationshilfen einfacher gelöst werden könnten.
+
+
+
+Angehende Probleme:
+Projektplanung – Roadmap, Meilensteine und klare Zeitplanung erstellen.
+Plattformwahl – App Store, Google Play Store
+Backend-Architektur – Cloud oder eigener Server, Datenbankmodell.
+Benachrichtigungen – Push-Mitteilungen & Widgets zuverlässig integrieren.
+Synchronisierung – Mehrbenutzer-Support in Echtzeit.
+Kalenderintegration – Google, Outlook, iCloud zuverlässig anbinden.
+KI-Funktionen – Intervalle dynamisch anpassen, aus Nutzerdaten lernen.
+Benutzerfreundlichkeit – einfache Bedienung, klare Oberfläche.
+Akzeptanz – alle Haushaltsmitglieder zur Nutzung motivieren.
+Datenschutz (DSGVO) – Speicherung von Standort- und Sensordaten rechtskonform gestalten.
+Kinder-Modus & Jugendschutz – rechtliche Vorgaben für Inhalte beachten.
+Monetarisierung & Kosten – Finanzierungsmodell (Freemium, Abo, Einmalzahlung) und laufende Kosten klären.
