@@ -1,2 +1,2 @@
 # CleanQuest
-Christians Schreiberechte wurden entzogen
+Julius ist wie eine Milchtüte aufgebaut. 
