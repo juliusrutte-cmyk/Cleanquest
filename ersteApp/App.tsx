@@ -1659,6 +1659,7 @@ export default function App() {
       )}
 
       {/* Bottom Navigation */}
+      {authStage === 'app' && (
       <View style={styles.bottomNav}>
         <TouchableOpacity
           style={[styles.navItem, activeTab === 0 && styles.navItemActive]}
@@ -1700,8 +1701,9 @@ export default function App() {
           <Text style={[styles.navLabel, activeTab === 4 && styles.navLabelActive]}>Chat</Text>
         </TouchableOpacity>
       </View>
+      )}
 
-      {activeTab === 0 && (
+      {authStage === 'app' && activeTab === 0 && (
         <TouchableOpacity
           style={styles.addEventButton}
           onPress={() => setShowAddEvent(!showAddEvent)}
