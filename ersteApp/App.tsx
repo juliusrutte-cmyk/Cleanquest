@@ -897,6 +897,7 @@ export default function App() {
               placeholder="Benutzername"
               value={loginUsername}
               onChangeText={setLoginUsername}
+              
               placeholderTextColor="#999"
             />
             <TextInput
@@ -1569,8 +1570,8 @@ export default function App() {
       <View style={styles.content}>
         {renderContent()}
         
-        {/* Family Management Button - Top Right */}
-        {authStage === 'app' && (
+        {/* Family Management Button - Top Right - Only on Home Page */}
+        {authStage === 'app' && activeTab === 2 && (
           <TouchableOpacity 
             style={styles.familyManagementButton}
             onPress={() => setShowFamilyModal(true)}
