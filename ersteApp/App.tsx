@@ -1484,7 +1484,6 @@ export default function App() {
             </View>
             <View style={styles.homeContent}>
               <Text style={styles.contentText}>Willkommen, {currentUser?.username}!</Text>
-              <Text style={styles.familyText}>Familie: {currentFamily?.name}</Text>
             </View>
           </View>
         );
@@ -2250,23 +2249,23 @@ const styles = StyleSheet.create({
   },
   addEventButton: {
     position: 'absolute',
-    bottom: 100,
+    top: 55,
     right: 20,
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
     backgroundColor: '#FFD700',
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 10,
-    elevation: 5,
+    elevation: 3,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
-    shadowRadius: 4,
+    shadowRadius: 3,
   },
   addEventButtonText: {
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: 'bold',
     color: '#FFFFFF',
   },
