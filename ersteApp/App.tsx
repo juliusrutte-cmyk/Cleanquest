@@ -1352,10 +1352,11 @@ export default function App() {
                   />
                   <TextInput
                     style={styles.todoInput}
-                    placeholder="Uhrzeit (z.B. 14:30)"
+                    placeholder="Zeit (z.B. 1430)"
                     value={newTodoReminder}
-                    onChangeText={setNewTodoReminder}
+                    onChangeText={(text) => setNewTodoReminder(text.replace(/[^0-9]/g, ''))}
                     placeholderTextColor="#999"
+                    keyboardType="numeric"
                   />
                 </View>
                 <TouchableOpacity
@@ -1590,6 +1591,9 @@ export default function App() {
         >
           <View style={styles.modalOverlay}>
             <View style={styles.modalContent}>
+                <TouchableOpacity style={styles.modalCloseButton} onPress={() => setShowFamilyModal(false)}>
+                  <Text style={styles.modalCloseButtonText}>✕</Text>
+                </TouchableOpacity>
               <Text style={styles.modalTitle}>🏠 Familie verwalten</Text>
               
               {currentFamily ? (
@@ -1598,7 +1602,7 @@ export default function App() {
                   <Text style={styles.familyCodeDisplay}>Code: <Text style={{ fontWeight: 'bold', fontSize: 18 }}>{currentFamily.code}</Text></Text>
                   
                   <TouchableOpacity 
-                    style={styles.modalButtonSave}
+                    style={[styles.modalButtonSave, { marginBottom: 12 }]}
                     onPress={() => {
                       if (typeof window !== 'undefined' && navigator.clipboard) {
                         navigator.clipboard.writeText(currentFamily.code).then(() => {
@@ -1610,17 +1614,12 @@ export default function App() {
                     <Text style={styles.modalButtonText}>📋 Code kopieren</Text>
                   </TouchableOpacity>
 
-                  <TouchableOpacity 
-                    style={styles.modalButtonCancel}
-                    onPress={() => setShowFamilyModal(false)}
-                  >
-                    <Text style={styles.modalButtonCancelText}>Schließen</Text>
-                  </TouchableOpacity>
+                  {/* Schließen-Button entfernt; oben rechts bleibt das ✕ zum Schließen */}
                 </>
               ) : (
                 <>
                   <TouchableOpacity 
-                    style={styles.modalButtonSave}
+                    style={[styles.modalButtonSave, { marginBottom: 12 }]}
                     onPress={() => {
                       setShowFamilyModal(false);
                       setAuthStage('createFamily');
@@ -1630,7 +1629,7 @@ export default function App() {
                   </TouchableOpacity>
 
                   <TouchableOpacity 
-                    style={styles.modalButtonSave}
+                    style={[styles.modalButtonSave, { marginBottom: 12 }]}
                     onPress={() => {
                       setShowFamilyModal(false);
                       setAuthStage('joinFamily');
@@ -1719,20 +1718,24 @@ export default function App() {
         >
           <View style={styles.modalOverlay}>
             <View style={styles.modalContent}>
+                <TouchableOpacity style={styles.modalCloseButton} onPress={() => setShowAddEvent(false)}>
+                  <Text style={styles.modalCloseButtonText}>✕</Text>
+                </TouchableOpacity>
               <Text style={styles.modalTitle}>Event hinzufügen</Text>
               
               <Text style={styles.modalLabel}>Datum:</Text>
               <Text style={styles.modalDateText}>
                 {selectedDate.toLocaleDateString('de-DE')}
               </Text>
-
-              <Text style={styles.modalLabel}>Uhrzeit:</Text>
+              
+              <Text style={styles.modalLabel}>Zeit:</Text>
               <TextInput
                 style={styles.modalInput}
-                placeholder="z.B. 14:30"
+                placeholder="z.B. 1430"
                 value={eventTime}
-                onChangeText={setEventTime}
+                onChangeText={(text) => setEventTime(text.replace(/[^0-9]/g, ''))}
                 placeholderTextColor="#999"
+                keyboardType="numeric"
               />
 
               <Text style={styles.modalLabel}>Beschreibung:</Text>
@@ -1754,16 +1757,7 @@ export default function App() {
                   <Text style={styles.modalButtonText}>Speichern</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity
-                  style={styles.modalButtonCancel}
-                  onPress={() => {
-                    setShowAddEvent(false);
-                    setEventTime('');
-                    setEventDescription('');
-                  }}
-                >
-                  <Text style={styles.modalButtonCancelText}>Abbrechen</Text>
-                </TouchableOpacity>
+                {/* Abbrechen-Button entfernt; oben rechts bleibt das ✕ zum Schließen */}
               </View>
             </View>
           </View>
@@ -2376,18 +2370,16 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   modalButtonSave: {
-    flex: 1,
     backgroundColor: '#FFD700',
     paddingVertical: 12,
     borderRadius: 8,
-    marginRight: 8,
+    width: '100%',
   },
   modalButtonCancel: {
-    flex: 1,
     backgroundColor: '#E0E0E0',
     paddingVertical: 12,
     borderRadius: 8,
-    marginLeft: 8,
+    width: '100%',
   },
   modalButtonText: {
     fontSize: 14,
@@ -2400,6 +2392,18 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
     textAlign: 'center',
+  },
+  modalCloseButton: {
+    position: 'absolute',
+    top: 8,
+    right: 8,
+    zIndex: 10,
+    padding: 6,
+    borderRadius: 16,
+  },
+  modalCloseButtonText: {
+    fontSize: 16,
+    color: '#333',
   },
   eventsDisplay: {
     position: 'absolute',
