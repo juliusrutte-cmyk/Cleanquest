@@ -251,7 +251,6 @@ export default function App() {
     'Neuer Tag, neues Gelingen!',
     'Bereit für eine Quest?'
   ];
-  "cd ersteApp";
 
   // Initialize app - check if user is logged in
   useEffect(() => {
@@ -1481,13 +1480,11 @@ export default function App() {
                   elevation: 6,
                 }}
               />
-            </View>
-            <View style={styles.homeContent}>
-              <Text style={styles.contentText}>Willkommen, {currentUser?.username}!</Text>
-            </View>
+           </View>
           </View>
         );
-      case 3:
+        
+      case 3:;
         return <Text style={styles.contentText}>Einkaufen</Text>;
       case 4:
         return (
@@ -1696,7 +1693,7 @@ export default function App() {
           style={[styles.navItem, activeTab === 4 && styles.navItemActive]}
           onPress={() => setActiveTab(4)}
         >
-          <Text style={[styles.navText, activeTab === 4 && styles.navTextActive]}>�</Text>
+          <Text style={[styles.navText, activeTab === 4 && styles.navTextActive]}>💬</Text>
           <Text style={[styles.navLabel, activeTab === 4 && styles.navLabelActive]}>Chat</Text>
         </TouchableOpacity>
       </View>
