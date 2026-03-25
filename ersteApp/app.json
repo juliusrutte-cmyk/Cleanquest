@@ -4,11 +4,11 @@
     "slug": "ersteApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon-cq.png.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon-cq.png.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
